@@ -6,10 +6,12 @@ class User {
 
 
     void updateAge(Integer age) {
+        // Problem
+        // The behavior of the User class only represents a single row of data in the database tables
         // You can not use updateAge method in the User class.
         // Because it adds new responsibility on User.
-        // This method changes behavior of User class.
-        // The behavior of the User class only represents a single row of data in the database tables
-        // One class has the responsibility to adhere to the principles of Liskov.
+        // A class have only one responsibility
+        // Solution
+        // Move the updateAge method to another class.
     }
 }
